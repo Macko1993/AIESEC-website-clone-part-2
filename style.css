@@ -1,0 +1,291 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    overflow-x: hidden;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    z-index: 3;
+}
+
+nav{
+    position: fixed;
+      width: 100%;
+      line-height: 8px;
+    z-index: 3;
+}
+
+nav ul{
+      line-height: 30px;
+      list-style:none;
+      background: #037ef3;
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 10px;
+      transition: 1s;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+}
+
+
+nav ul li{
+    display: inline-block;
+    padding: 16px 20px;;
+    z-index: 3;
+    transition: 3s;
+    color: #fff;
+   
+}
+
+nav ul li a{
+    content: '';
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    z-index: 3;
+    transition: 3s;
+    
+}
+
+nav ul li a:hover {
+    width: 100%;
+    transition: 3s;
+    color: #fff;
+}
+
+
+
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+
+}
+
+.fullscreen-video-wrap video{
+    min-width:100%;
+    min-height:100%;
+}
+
+.header-overlay{
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    top:0;
+    left: 0;
+    background: #225470;
+    z-index:1;
+    opacity:0.5;
+
+}
+
+
+.center-section-content h2{
+    font-size: 30px;
+    margin-left: 400px;
+}
+
+.center-section-content2 h2{
+    font-size: 30px;
+    margin-left: 500px;
+}
+
+.header-content{
+    z-index:2;
+}
+
+.header-content h1{
+    font-size: 60px;
+    margin-bottom: 0;
+
+}
+
+.header-content p{
+    font-size: 1.2rem;
+    display: block;
+    padding-bottom: 2rem;
+    align-content: left;
+}
+
+.btn{
+    background: #037ef3;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.section{
+    padding: 20px 0;
+}
+
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+.box {
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+.box:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+  
+
+
+
+.carousel__frame {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: table;
+}
+
+.carousel__slides {
+    display: block;
+}
+
+.carousel__item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+.carousel__prev, .carousel__next {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+}
+
+.carousel__prev {
+    left: 2rem;
+}
+
+.carousel__next {
+    right: 2rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+button {
+    background: rgba(0,0,0,0);
+    border: none;
+    color: #fff;
+}
+  
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+  
+
+
+
+
+@media(max-width:960px){
+    .container{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+@media(max-width:580px){
+    .logo{
+        position: fixed;
+        top:0;
+        margin-top: 16px;
+    }
+
+    nav ul{
+        max-height: 0px;
+        background: #000;
+
+
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+
+    
+}

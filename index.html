@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="lory.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <title>AIESEC webpage clone</title>
+</head>
+<body>                 
+            
+    <div class="wrapper">
+        <header>
+            <nav>
+            <div class="logo">
+                    LOGO
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">For Organizations</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+    </div>
+
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video src="video1.mp4" autoplay="" loop=""></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Live The Experience</h1>
+            <p>Activate your leadership by going on an experience with AIESEC. We provide you with the opportunity to live a shared responsibility for the world and equip you with the tools to shape it for a better future.</p>
+            <a href="#" class="btn hvr-grow" class="btn">Read more</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="center-section-content">
+            <h2>How will you choose to develop yourself?</h2>
+        </div>
+    </section>
+
+    
+    <!--Boxes sections-->
+    <section class="boxes">
+            <div class="box">
+              <a href="#" class="link"><i class="fas fa-hands-helping fa-4x"></i></a>
+              <h3>Global Volonter</h3>
+              <p>Ambitious enough to believe you can make a positive impact in our world? Well, we believe you can, through volunteering towards the UN Global Goals!<br><br>
+                DURATION<br>
+                6 - 12 weeks<br><br>
+                ORGANIZATION<br>
+                NGO<br><br>
+                
+                COMPENSATION<br>
+                
+                No<br></p><br>
+                <a href="#" class="btn hvr-grow">Read more</a>
+            </div>
+            <div class="box">
+             <a href="#" class="link"><i class="fas fa-globe fa-4x"></i></a>
+              <h3>Global Talent</h3>
+              <p>Searching for the next opportunity to level yourself up and gain professional experience? Differentiate yourself through an international internship.<br><br>
+                DURATION<br>
+
+                6 - 78 weeks<br><br>
+                
+                ORGANIZATION<br>
+                
+                Company<br><br>
+                
+                COMPENSATION<br>
+                
+                Yes<br></p><br>
+                <a href="#" class="btn hvr-grow" >Read more</a>
+            </div>
+            <div class="box">
+              <a href="#" class="link"><i class="fas fa-briefcase fa-4x"></i></a>
+              <h3>Global Enterpreneur</h3>
+              <p>Does a dynamic, fast-paced work environment excite you? Begin your entrepreneurial journey with an internship at a startup!<br><br>
+                DURATION<br>
+
+                6 - 12 weeks<br><br>
+                
+                ORGANIZATION<br>
+                
+                Startup<br><br>
+                
+                COMPENSATION<br>
+                
+                No<br></p><br>
+                <a href="#" class="btn hvr-grow">Read more</a>
+            </div>
+        </section>
+        
+        <section>
+                <div class="center-section-content2">
+                    <h2>Featured Opportunities</h2>
+                </div>
+            </section><br>
+
+            <div class="carousel js-carousel">
+              <figure class="carousel__frame js-carousel__frame">
+                    <div class="carousel__slides js-carousel__slides">
+                          <img src="img/img1.jpeg" class="carousel__item" />
+                          <img src="img/img2.jpeg" class="carousel__item" />
+                          <img src="img/img3.jpeg" class="carousel__item" />
+                          <img src="img/img4.jpeg" class="carousel__item" />
+                          
+  
+                    </div>
+  
+                    <button class="carousel__prev js-carousel__prev">
+                          <i class="fas fa-chevron-left"></i>
+                          </button>
+                    <button class="carousel__next js-carousel__next">
+                          <i class="fas fa-chevron-right"></i>
+                    </button>
+  
+              </figure>
+        </div>
+
+        <script type="text/javascript">
+
+          document.addEventListener('DOMContentLoaded', function() {
+          run();
+          });
+    
+          function run() {
+                var slider = document.querySelector('.js-carousel');
+                lory(slider, {
+                infinite: 1,
+                enableMouseEvents: true,
+                classNameFrame: 'js-carousel__frame',
+                classNameSlideContainer: 'js-carousel__slides',
+                classNamePrevCtrl: 'js-carousel__prev',
+                classNameNextCtrl: 'js-carousel__next',      
+                });
+          }
+    
+          </script>
+      
+</body>
+</html>
